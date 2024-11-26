@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method = "post">
+    {% csrf_token %}
+    {{ form.username.label }}
+    {{ form.username }}
+    {{ form.password.label }}
+    {{ form.password }}
+    <button type="submit">Авторизоваться</button>
+</form>
+</body>
+</html>
